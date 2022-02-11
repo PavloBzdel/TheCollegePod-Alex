@@ -12,6 +12,8 @@
 
 
 }
+::-webkit-input-placeholder {color: var(--border-color);}
+input::-webkit-input-placeholder {opacity: 1; transition: opacity 0.3s ease;}
 p{
     font-family: 'Work Sans', sans-serif;
     font-size: 15px;
@@ -351,12 +353,17 @@ p{
     cursor: pointer;
     transform: rotate(0deg);
 }
-/* .btn__join:hover{
-    opacity: 0.9;
-    transform: rotate(20deg);
-} */
 
-
+form#register span.text-error {
+    color:  var(--icon-red-color);
+    font-size: 10px;
+    line-height: 10px;
+  }
+  form#register span.dot {
+    color: var(--icon-red-color);
+    line-height: 15px;
+    
+} 
 .popup__overlay{
     position: fixed;
     top: 0;
@@ -371,10 +378,15 @@ p{
 	overflow-y: scroll;
 	display:none;
 }
+
 .popup__overlay.active{
     display: block;
     
 }
 .btn__close.active{
     display: none;
+}
+.text-error{
+    color: #000;
+    font-size: 90px;
 }
