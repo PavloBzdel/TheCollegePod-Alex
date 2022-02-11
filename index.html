@@ -146,55 +146,55 @@
                         <p class="popup__content__check">I AM A:</p>
                     </div>
                     <div class="popup__check__container">
-                        <p class="popup__check__phar">Student</p>
-                        <p class="popup__check__phar">Parent</p>
-                        <p class="popup__check__phar">Counselor</p>
-                        <p class="popup__check__phar">Other</p>
+                        <input class="input__radio" type="radio" name="st" value="student">
+                        <p> Student</p>
+                        <input class="input__radio" type="radio" name="st" value="parent">
+                        <p> Parent</p>
+                        <input class="input__radio" type="radio" name="st" value="counselor">
+                        <p> Counselor</p>
+                        <input class="input__radio" type="radio" name="st" value="other">
+                        <p> Other</p>
                     </div>
-                    <form id="register" action="#" method="post">
-
-                        <div>
-                            <label for="name"></label>
-                            <input id="first__name" class="popup__input" data-validate-length-range="9" name="name"
-                                placeholder="First Name" required="required" type="text">
-                            <span class="dot">*</span>
+                    <form id="register" action="/data/" method="post">
+                        <div class="container__input__form">
+                            <div>
+                                <label for="name"></label>
+                                <input id="first__name" class="popup__input" name="name" placeholder="First Name"
+                                    required="required" type="text">
                             </div>
-
-
-                        <div>
-                            <label for="name"></label>
-                            <input id="last__name" class="popup__input" data-validate-length-range="6" name="name"
-                                placeholder="Last Name" required="required" type="text">
-                                <span class="dot">*</span>
+                            <div>
+                                <label for="name"></label>
+                                <input id="last__name" class="popup__input" name="name" placeholder="Last Name"
+                                    required="required" type="text">
                             </div>
-
-
-                        <div>
-                            <label for="email"></label>
-                            <input id="email" class="popup__input" data-validate-length-range="6" name="email"
-                                placeholder="Email Address" required="required" type="text">
-                                <span class="dot">*</span>
+                            <div>
+                                <label for="email"></label>
+                                <input id="email" class="popup__input" name="email" placeholder="Email Address"
+                                    required="required" type="text">
                             </div>
-
-                             
-                        <div>
-                            <label for="for-pass"></label>
-                            <input id="password" class="popup__input" data-validate-length-range="6" name="password"
-                                placeholder="Password" required="required" type="text">
-                                <span class="dot">*</span>
+                            <div>
+                                <label for="for-pass"></label>
+                                <input id="password" class="popup__input" name="password" placeholder="Password"
+                                    required="required" type="text">
                             </div>
-
-
-                        <div>
-                            <label for="for-pass2"></label>
-                            <input id="confirm__password" class="popup__input" data-validate-length-range="6" name="password"
-                                placeholder="Confirm Password" required="required" type="text">
-                                <span class="dot">*</span>
+                            <div>
+                                <label for="for-pass2"></label>
+                                <input id="confirm__password" class="popup__input" name="password"
+                                    placeholder="Confirm Password" required="required" type="text">
                             </div>
-
-                        <!-- <li><div ><input class="popup__input" placeholder="High School " type="text" ></div></li>
-                                    <li><div ><input class="popup__input" placeholder="High School Freshman" type="text" ></div></li> -->
-
+                        </div>
+                        <div>
+                            <select class="popup__input__select" name="vik">
+                                <option value="High School">High School</option>
+                                <option value="School">School</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select class="popup__input__select" name="vik">
+                                <option value="High School Freshman">High School Freshman</option>
+                                <option value="High School Freshman 1 ">High School Freshman 1</option>
+                            </select>
+                        </div>
                         <div class="popup__sub__container">
                             <p class="popup__sub__text">SUBSCRIBE:</p>
                             <div class="popup__sub__check">
@@ -215,10 +215,11 @@
                         </div>
                         <div class="popup__sub__online__container">
                             <div>
-                                <p class="popup__sub__online__text">HOW DID YOU HEAR ABOUT US:</p>
+                                <p class="popup__sub__online__text">Choice Date</p>
                             </div>
 
-                            <div><input class="popup__input" type="text" placeholder="Online search"></div>
+                            <div><input class="popup__input" type="date" placeholder="Data" id="start" name="trip-start"
+                                    value="2022-02-12" min="2022-01-12" max="2023-12-31"></div>
 
 
                         </div>
@@ -228,10 +229,12 @@
                                         class="popup__span">Terms &
                                         Conditions</span></p>
                             </div>
-                            <div class="popup__btn__join"><button type="submit" name="button" class="btn__join" id="send" >Join</button></div>
+                            <div class="popup__btn__join"><input type="submit" name="button" id="btn__join"
+                                    value="Join"></div>
                         </div>
                     </form>
-                    <div class="popup__btn__close"><button class="btn__close">Close</button></div>
+                    <div class="popup__btn__close"><button id="btn__close" class="btn__close">Close</button></div>
+                    <div id="box"></div>
                 </div>
             </div>
         </div>
